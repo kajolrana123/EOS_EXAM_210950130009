@@ -21,7 +21,7 @@ int msg_prio;
 int main (int argc, char const *argv[])
 {
     cdacmq_attr.mq_flags =0;
-    cdacmq_attr.mq_maxmsg =4;
+    cdacmq_attr.mq_maxmsg =1;
     cdacmq_attr.mq_msgsize =128;
     cdacmq_attr.mq_curmsgs = 0;
 
