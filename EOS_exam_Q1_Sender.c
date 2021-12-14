@@ -20,11 +20,11 @@ int main()
     int fd_one;
     int fd_two;
     char buff;
-    fd_open = open("dictionary.txt", O_RDONLY); 
+    fd_one = open("dictionary.txt", O_RDONLY); 
     
-    if (fd== -1) 
+    if (fd_one== -1) 
      { printf("Error opening first_file\n"); 
-     close(fd); 
+     close(fd_one); 
      
       } 
       else
@@ -37,8 +37,7 @@ int main()
           write(fd_two, &buff, 1); 
           } 
           printf("Successful copy"); 
-          close(fd_one); 
-          close(fd_two); 
+         
           
 while(read(fd_one, &buff, 1)) 
 {
